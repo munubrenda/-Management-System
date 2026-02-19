@@ -1,5 +1,3 @@
-// PROJECT: Student Management
-// Demonstrates: Encapsulation, Inheritance,  Polymorphism, and Abstraction
 
 import java.util.Scanner;
 
@@ -119,3 +117,4 @@ public class MainApplication {
         }
     }
 }
+
