@@ -1,12 +1,10 @@
-
 import java.util.Scanner;
 
-
-// STEP 1: ABSTRACTION;  Abstract class Person by properties shared by all people
+// STEP 1: ABSTRACTION,  Abstract class using properties shared by all people
 
 abstract class Person {
 
-    // Encapsulation: private with final while doesn't change for assignments
+    // Encapsulation, private final while making sure doesn't change for assignments
     private final String id;
     private final String name;
 
@@ -26,7 +24,7 @@ abstract class Person {
         return name;
     }
 
-    // Abstract method that implement subclass
+    // Abstract method subclass
     public abstract void displayDetails();
 }
 
@@ -41,7 +39,8 @@ class Student extends Person {
 
     // Constructor
     public Student(String id, String name, String course, double marks) {
-        super(id, name); // Calling parent constructor
+        super(id, name);
+        // Calling parent constructor
         this.course = course;
         this.marks = marks;
     }
@@ -55,7 +54,7 @@ class Student extends Person {
         return marks;
     }
 
-    // STEP 3: POLYMORPHISM, overriding displayDetails from Person
+    // STEP 3: POLYMORPHISM, overriding displayDetails from the Person
 
     @Override
     public void displayDetails() {
@@ -117,4 +116,3 @@ public class MainApplication {
         }
     }
 }
-
